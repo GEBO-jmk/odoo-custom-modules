@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="fap_asset_view_form" model="ir.ui.view">
+        <field name="name">fap.asset.view.form</field>
+        <field name="model">fap.asset</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" icon="fa-cogs"
+                            type="action"
+                            name="%(field_asset_portal.fap_equipment_action)d"
+                            context="{'default_asset_id': id, 'search_default_asset_id': id}">
+                            <field name="equipment_count" widget="statinfo" string="Equipment"/>
+                        </button>
+                        <button class="oe_stat_button" icon="fa-wrench"
+                            type="action"
+                            name="%(field_asset_portal.fap_service_action_action)d"
+                            context="{'default_asset_id': id, 'search_default_asset_id': id}">
+                            <field name="service_action_count" widget="statinfo" string="Service Actions"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="Asset Name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="ref"/>
+                            <field name="location_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="General">
+                            <group>
+                                <field name="contractor_id"/>
+                                <field name="service_company_id"/>
+                                <field name="end_user_id"/>
+                            </group>
+                        </page>
+                        <page string="Warranty">
+                            <group>
+                                <field name="warranty_start"/>
+                                <field name="warranty_duration"/>
+                                <field name="warranty_end"/>
+                                <field name="warranty_status" widget="badge"
+                                    decoration-success="warranty_status == 'active'"
+                                    decoration-warning="warranty_status == 'expiring_soon'"
+                                    decoration-danger="warranty_status == 'expired'"
+                                    decoration-muted="warranty_status == 'not_set'"/>
+                            </group>
+                        </page>
+                    </notebook>
+                    <group string="Notes">
+                        <field name="notes" nolabel="1"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="fap_asset_view_list" model="ir.ui.view">
+        <field name="name">fap.asset.view.list</field>
+        <field name="model">fap.asset</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="location_id"/>
+                <field name="contractor_id"/>
+                <field name="warranty_end"/>
+                <field name="warranty_status" widget="badge"
+                    decoration-success="warranty_status == 'active'"
+                    decoration-warning="warranty_status == 'expiring_soon'"
+                    decoration-danger="warranty_status == 'expired'"
+                    decoration-muted="warranty_status == 'not_set'"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="fap_asset_view_search" model="ir.ui.view">
+        <field name="name">fap.asset.view.search</field>
+        <field name="model">fap.asset</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="location_id"/>
+                <filter name="warranty_active" string="Active" domain="[('warranty_status', '=', 'active')]"/>
+                <filter name="warranty_expiring_soon" string="Expiring Soon" domain="[('warranty_status', '=', 'expiring_soon')]"/>
+                <filter name="warranty_expired" string="Expired" domain="[('warranty_status', '=', 'expired')]"/>
+                <separator/>
+                <filter name="group_by_location" string="Location" context="{'group_by': 'location_id'}"/>
+                <filter name="group_by_contractor" string="Contractor" context="{'group_by': 'contractor_id'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="fap_asset_action" model="ir.actions.act_window">
+        <field name="name">Assets</field>
+        <field name="res_model">fap.asset</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="fap_menu_assets"
+        name="Assets"
+        parent="fap_menu_root"
+        action="fap_asset_action"
+        sequence="20"/>
+
+</odoo>

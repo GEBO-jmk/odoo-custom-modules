@@ -1,0 +1,652 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* field_asset_portal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260305\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-14 12:35+0000\n"
+"PO-Revision-Date: 2026-03-14 12:35+0000\n"
+"Last-Translator: \n"
+"Language-Team: Finnish\n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: field_asset_portal
+#: model:ir.model.fields.selection,name:field_asset_portal.selection__fap_asset__warranty_status__active
+#: model:ir.model.fields.selection,name:field_asset_portal.selection__fap_equipment__manufacturer_warranty_status__active
+#: model:ir.model.fields.selection,name:field_asset_portal.selection__fap_equipment__our_warranty_status__active
+msgid "Active"
+msgstr "Aktiivinen"
+
+#. module: field_asset_portal
+msgid "Action Needed"
+msgstr "Toimenpide vaaditaan"
+
+#. module: field_asset_portal
+msgid "Activities"
+msgstr "Aktiviteetit"
+
+#. module: field_asset_portal
+msgid "Activity Exception Decoration"
+msgstr "Aktiviteetin poikkeuskoristelu"
+
+#. module: field_asset_portal
+msgid "Activity State"
+msgstr "Aktiviteetin tila"
+
+#. module: field_asset_portal
+msgid "Activity Type Icon"
+msgstr "Aktiviteettityypin kuvake"
+
+#. module: field_asset_portal
+msgid "Address"
+msgstr "Osoite"
+
+#. module: field_asset_portal
+msgid "Approve"
+msgstr "Hyväksy"
+
+#. module: field_asset_portal
+msgid "Approved"
+msgstr "Hyväksytty"
+
+#. module: field_asset_portal
+msgid "Asset"
+msgstr "Kohde"
+
+#. module: field_asset_portal
+msgid "Asset Name"
+msgstr "Kohteen nimi"
+
+#. module: field_asset_portal
+msgid "Asset:"
+msgstr "Kohde:"
+
+#. module: field_asset_portal
+msgid "Assets"
+msgstr "Kohteet"
+
+#. module: field_asset_portal
+msgid "Assigned To"
+msgstr "Vastuuhenkilö"
+
+#. module: field_asset_portal
+msgid "Attachment Count"
+msgstr "Liitteiden määrä"
+
+#. module: field_asset_portal
+msgid "Brief description of the issue or request"
+msgstr "Lyhyt kuvaus ongelmasta tai pyynnöstä"
+
+#. module: field_asset_portal
+msgid "Calibration"
+msgstr "Kalibrointi"
+
+#. module: field_asset_portal
+msgid "Cancel"
+msgstr "Peruuta"
+
+#. module: field_asset_portal
+msgid "Cancelled"
+msgstr "Peruutettu"
+
+#. module: field_asset_portal
+msgid "City"
+msgstr "Kaupunki"
+
+#. module: field_asset_portal
+msgid "Completed On"
+msgstr "Valmistui"
+
+#. module: field_asset_portal
+msgid "Confirm"
+msgstr "Vahvista"
+
+#. module: field_asset_portal
+msgid "Confirmed"
+msgstr "Vahvistettu"
+
+#. module: field_asset_portal
+msgid "Contractor"
+msgstr "Urakoitsija"
+
+#. module: field_asset_portal
+msgid "Corrective"
+msgstr "Korjaava"
+
+#. module: field_asset_portal
+msgid "Country"
+msgstr "Maa"
+
+#. module: field_asset_portal
+msgid "Created by"
+msgstr "Luonut"
+
+#. module: field_asset_portal
+msgid "Created on"
+msgstr "Luotu"
+
+#. module: field_asset_portal
+msgid "Critical"
+msgstr "Kriittinen"
+
+#. module: field_asset_portal
+msgid "Date Requested"
+msgstr "Pyyntöpäivä"
+
+#. module: field_asset_portal
+msgid "Decline"
+msgstr "Hylkää"
+
+#. module: field_asset_portal
+msgid "Declined"
+msgstr "Hylätty"
+
+#. module: field_asset_portal
+msgid "Description"
+msgstr "Kuvaus"
+
+#. module: field_asset_portal
+msgid "Details"
+msgstr "Tiedot"
+
+#. module: field_asset_portal
+msgid "Display Name"
+msgstr "Näyttönimi"
+
+#. module: field_asset_portal
+msgid "Done"
+msgstr "Valmis"
+
+#. module: field_asset_portal
+msgid "Draft"
+msgstr "Luonnos"
+
+#. module: field_asset_portal
+msgid "End"
+msgstr "Päättyy"
+
+#. module: field_asset_portal
+msgid "End User"
+msgstr "Loppukäyttäjä"
+
+#. module: field_asset_portal
+msgid "Equipment"
+msgstr "Laitteet"
+
+#. module: field_asset_portal
+msgid "Equipment Name"
+msgstr "Laitteen nimi"
+
+#. module: field_asset_portal
+msgid "Expired"
+msgstr "Vanhentunut"
+
+#. module: field_asset_portal
+msgid "Expiring Soon"
+msgstr "Vanhenee pian"
+
+#. module: field_asset_portal
+msgid "Field Asset Portal"
+msgstr "Kenttäkohteiden hallinta"
+
+#. module: field_asset_portal
+msgid "Followers"
+msgstr "Seuraajat"
+
+#. module: field_asset_portal
+msgid "Followers (Partners)"
+msgstr "Seuraajat (kumppanit)"
+
+#. module: field_asset_portal
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font Awesome -kuvake, esim. fa-tasks"
+
+#. module: field_asset_portal
+msgid "General"
+msgstr "Yleinen"
+
+#. module: field_asset_portal
+msgid "Has Message"
+msgstr "Sisältää viestejä"
+
+#. module: field_asset_portal
+msgid "ID"
+msgstr "Tunnus"
+
+#. module: field_asset_portal
+msgid "Icon"
+msgstr "Kuvake"
+
+#. module: field_asset_portal
+msgid "Icon to indicate an exception activity."
+msgstr "Kuvake poikkeusaktiviteetin merkitsemiseen."
+
+#. module: field_asset_portal
+msgid "Identification"
+msgstr "Tunnistetiedot"
+
+#. module: field_asset_portal
+msgid "If checked, new messages require your attention."
+msgstr "Jos valittu, uudet viestit vaativat huomiotasi."
+
+#. module: field_asset_portal
+msgid "If checked, some messages have a delivery error."
+msgstr "Jos valittu, joillakin viesteillä on lähetysvirhe."
+
+#. module: field_asset_portal
+msgid "In Progress"
+msgstr "Käynnissä"
+
+#. module: field_asset_portal
+msgid "Inspection"
+msgstr "Tarkastus"
+
+#. module: field_asset_portal
+msgid "Installation"
+msgstr "Asennus"
+
+#. module: field_asset_portal
+msgid "Internal Reference"
+msgstr "Sisäinen viite"
+
+#. module: field_asset_portal
+msgid "Is Follower"
+msgstr "On seuraaja"
+
+#. module: field_asset_portal
+msgid "Last Updated by"
+msgstr "Viimeksi päivittänyt"
+
+#. module: field_asset_portal
+msgid "Last Updated on"
+msgstr "Viimeksi päivitetty"
+
+#. module: field_asset_portal
+msgid "Location"
+msgstr "Sijainti"
+
+#. module: field_asset_portal
+msgid "Location Name"
+msgstr "Sijainnin nimi"
+
+#. module: field_asset_portal
+msgid "Locations"
+msgstr "Sijainnit"
+
+#. module: field_asset_portal
+msgid "Manufacturer"
+msgstr "Valmistaja"
+
+#. module: field_asset_portal
+msgid "Manufacturer Part Code"
+msgstr "Valmistajan osanumero"
+
+#. module: field_asset_portal
+msgid "Manufacturer Serial"
+msgstr "Valmistajan sarjanumero"
+
+#. module: field_asset_portal
+msgid "Manufacturer Serial Number"
+msgstr "Valmistajan sarjanumero"
+
+#. module: field_asset_portal
+msgid "Manufacturer Warranty"
+msgstr "Valmistajan takuu"
+
+#. module: field_asset_portal
+msgid "Manufacturer Warranty (months)"
+msgstr "Valmistajan takuu (kuukausia)"
+
+#. module: field_asset_portal
+msgid "Manufacturer Warranty End"
+msgstr "Valmistajan takuu päättyy"
+
+#. module: field_asset_portal
+msgid "Manufacturer Warranty Start"
+msgstr "Valmistajan takuu alkaa"
+
+#. module: field_asset_portal
+msgid "Manufacturer Warranty Status"
+msgstr "Valmistajan takuun tila"
+
+#. module: field_asset_portal
+msgid "Mark Done"
+msgstr "Merkitse valmiiksi"
+
+#. module: field_asset_portal
+msgid "Message Delivery error"
+msgstr "Viestin lähetysvirhe"
+
+#. module: field_asset_portal
+msgid "Messages"
+msgstr "Viestit"
+
+#. module: field_asset_portal
+msgid "Mfr Warranty"
+msgstr "Valmistajan takuu"
+
+#. module: field_asset_portal
+msgid "My Activity Deadline"
+msgstr "Oma aktiviteetin määräaika"
+
+#. module: field_asset_portal
+msgid "My Assets"
+msgstr "Omat kohteet"
+
+#. module: field_asset_portal
+msgid "Name"
+msgstr "Nimi"
+
+#. module: field_asset_portal
+msgid "New Service Request"
+msgstr "Uusi huoltopyyntö"
+
+#. module: field_asset_portal
+msgid "Next Activity Deadline"
+msgstr "Seuraavan aktiviteetin määräaika"
+
+#. module: field_asset_portal
+msgid "Next Activity Summary"
+msgstr "Seuraavan aktiviteetin yhteenveto"
+
+#. module: field_asset_portal
+msgid "Next Activity Type"
+msgstr "Seuraavan aktiviteetin tyyppi"
+
+#. module: field_asset_portal
+msgid "No assets found."
+msgstr "Kohteita ei löydy."
+
+#. module: field_asset_portal
+msgid "No equipment recorded for this asset."
+msgstr "Tälle kohteelle ei ole kirjattuja laitteita."
+
+#. module: field_asset_portal
+msgid "No service actions recorded for this asset."
+msgstr "Tälle kohteelle ei ole kirjattuja huoltotapahtumia."
+
+#. module: field_asset_portal
+msgid "Normal"
+msgstr "Normaali"
+
+#. module: field_asset_portal
+msgid "Not Set"
+msgstr "Ei asetettu"
+
+#. module: field_asset_portal
+msgid "Notes"
+msgstr "Muistiinpanot"
+
+#. module: field_asset_portal
+msgid "Number of Actions"
+msgstr "Toimenpiteiden määrä"
+
+#. module: field_asset_portal
+msgid "Number of errors"
+msgstr "Virheiden määrä"
+
+#. module: field_asset_portal
+msgid "Number of messages requiring action"
+msgstr "Toimenpiteitä vaativien viestien määrä"
+
+#. module: field_asset_portal
+msgid "Number of messages with delivery error"
+msgstr "Lähetysvirheen sisältävien viestien määrä"
+
+#. module: field_asset_portal
+msgid "Our Part Code"
+msgstr "Oma osanumero"
+
+#. module: field_asset_portal
+msgid "Our References"
+msgstr "Omat viitteet"
+
+#. module: field_asset_portal
+msgid "Our Serial Number"
+msgstr "Oma sarjanumero"
+
+#. module: field_asset_portal
+msgid "Our Warranty"
+msgstr "Oma takuu"
+
+#. module: field_asset_portal
+msgid "Our Warranty (months)"
+msgstr "Oma takuu (kuukausia)"
+
+#. module: field_asset_portal
+msgid "Our Warranty Active"
+msgstr "Oma takuu aktiivinen"
+
+#. module: field_asset_portal
+msgid "Our Warranty End"
+msgstr "Oma takuu päättyy"
+
+#. module: field_asset_portal
+msgid "Our Warranty Expired"
+msgstr "Oma takuu vanhentunut"
+
+#. module: field_asset_portal
+msgid "Our Warranty Expiring"
+msgstr "Oma takuu vanhenee pian"
+
+#. module: field_asset_portal
+msgid "Our Warranty Start"
+msgstr "Oma takuu alkaa"
+
+#. module: field_asset_portal
+msgid "Our Warranty Status"
+msgstr "Oman takuun tila"
+
+#. module: field_asset_portal
+msgid "Owner"
+msgstr "Omistaja"
+
+#. module: field_asset_portal
+msgid "Parts Replacement"
+msgstr "Osien vaihto"
+
+#. module: field_asset_portal
+msgid "Pending"
+msgstr "Odottaa käsittelyä"
+
+#. module: field_asset_portal
+msgid "Pending Requests"
+msgstr "Odottavat pyynnöt"
+
+#. module: field_asset_portal
+msgid "Please describe the issue in detail..."
+msgstr "Kuvaile ongelma tarkemmin..."
+
+#. module: field_asset_portal
+msgid "Predictive"
+msgstr "Ennakoiva"
+
+#. module: field_asset_portal
+msgid "Preventive"
+msgstr "Ehkäisevä"
+
+#. module: field_asset_portal
+msgid "Priority"
+msgstr "Prioriteetti"
+
+#. module: field_asset_portal
+msgid "Ref"
+msgstr "Viite"
+
+#. module: field_asset_portal
+msgid "Reference"
+msgstr "Viite"
+
+#. module: field_asset_portal
+msgid "Regarding your service request {{ object.ref }}"
+msgstr "Huoltopyyntönne {{ object.ref }} koskien"
+
+#. module: field_asset_portal
+msgid "Request Service"
+msgstr "Pyydä huoltoa"
+
+#. module: field_asset_portal
+msgid "Requested By"
+msgstr "Pyytäjä"
+
+#. module: field_asset_portal
+msgid "Requested On"
+msgstr "Pyydetty"
+
+#. module: field_asset_portal
+msgid "Reset to Draft"
+msgstr "Palauta luonnokseksi"
+
+#. module: field_asset_portal
+msgid "Resolution"
+msgstr "Ratkaisu"
+
+#. module: field_asset_portal
+msgid "Resolution Notes"
+msgstr "Ratkaisun kuvaus"
+
+#. module: field_asset_portal
+msgid "Responsible User"
+msgstr "Vastuuhenkilö"
+
+#. module: field_asset_portal
+msgid "SMS Delivery error"
+msgstr "SMS-lähetysvirhe"
+
+#. module: field_asset_portal
+msgid "Scheduled Date"
+msgstr "Aikataulutettu päivämäärä"
+
+#. module: field_asset_portal
+msgid "Send for Review"
+msgstr "Lähetä tarkastettavaksi"
+
+#. module: field_asset_portal
+msgid "Service Action"
+msgstr "Huoltotapahtuma"
+
+#. module: field_asset_portal
+msgid "Service Actions"
+msgstr "Huoltotapahtumat"
+
+#. module: field_asset_portal
+msgid "Service Company"
+msgstr "Huoltoyhtiö"
+
+#. module: field_asset_portal
+msgid "Service History"
+msgstr "Huoltohistoria"
+
+#. module: field_asset_portal
+msgid "Service Request Approved"
+msgstr "Huoltopyyntö hyväksytty"
+
+#. module: field_asset_portal
+msgid "Service Request Declined"
+msgstr "Huoltopyyntö hylätty"
+
+#. module: field_asset_portal
+msgid "Site Owner"
+msgstr "Kohteen omistaja"
+
+#. module: field_asset_portal
+msgid "Start"
+msgstr "Aloita"
+
+#. module: field_asset_portal
+msgid "State"
+msgstr "Tila"
+
+#. module: field_asset_portal
+msgid "Status"
+msgstr "Tila"
+
+#. module: field_asset_portal
+msgid "Street"
+msgstr "Katuosoite"
+
+#. module: field_asset_portal
+msgid "Street 2"
+msgstr "Katuosoite 2"
+
+#. module: field_asset_portal
+msgid "Street2"
+msgstr "Katuosoite 2"
+
+#. module: field_asset_portal
+msgid "Submit Request"
+msgstr "Lähetä pyyntö"
+
+#. module: field_asset_portal
+msgid "Summary"
+msgstr "Yhteenveto"
+
+#. module: field_asset_portal
+msgid "Type"
+msgstr "Tyyppi"
+
+#. module: field_asset_portal
+msgid "Type of the exception activity on record."
+msgstr "Tietueeseen liittyvän poikkeusaktiviteetin tyyppi."
+
+#. module: field_asset_portal
+msgid "Urgent"
+msgstr "Kiireellinen"
+
+#. module: field_asset_portal
+msgid "View your assets, warranties and service history"
+msgstr "Tarkastele kohteitasi, takuita ja huoltohistoriaa"
+
+#. module: field_asset_portal
+msgid "Warranty"
+msgstr "Takuu"
+
+#. module: field_asset_portal
+msgid "Warranty Duration (months)"
+msgstr "Takuun kesto (kuukausia)"
+
+#. module: field_asset_portal
+msgid "Warranty End"
+msgstr "Takuu päättyy"
+
+#. module: field_asset_portal
+msgid "Warranty Start"
+msgstr "Takuu alkaa"
+
+#. module: field_asset_portal
+msgid "Warranty Status"
+msgstr "Takuun tila"
+
+#. module: field_asset_portal
+msgid "Website Messages"
+msgstr "Verkkosivuviestit"
+
+#. module: field_asset_portal
+msgid "Website communication history"
+msgstr "Verkkosivuviestinnän historia"
+
+#. module: field_asset_portal
+msgid "Your Assets"
+msgstr "Kohteet"
+
+#. module: field_asset_portal
+msgid "Your service request {{ object.ref }} has been approved"
+msgstr "Huoltopyyntönne {{ object.ref }} on hyväksytty"
+
+#. module: field_asset_portal
+msgid "ZIP"
+msgstr "Postinumero"
+
+#. module: field_asset_portal
+msgid "Zip"
+msgstr "Postinumero"
+
+#. module: field_asset_portal
+msgid "breadcrumb"
+msgstr "sivupolku"

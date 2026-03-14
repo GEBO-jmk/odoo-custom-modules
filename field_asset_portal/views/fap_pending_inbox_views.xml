@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="fap_pending_inbox_view_list" model="ir.ui.view">
+        <field name="name">fap.service.action.view.list.pending</field>
+        <field name="model">fap.service.action</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="ref"/>
+                <field name="name"/>
+                <field name="asset_id"/>
+                <field name="location_id"/>
+                <field name="action_type"/>
+                <field name="priority"/>
+                <field name="requested_by_id"/>
+                <field name="date_requested"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="fap_pending_inbox_action" model="ir.actions.act_window">
+        <field name="name">Pending Requests</field>
+        <field name="res_model">fap.service.action</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('state', '=', 'pending')]</field>
+    </record>
+
+    <menuitem id="fap_menu_pending_inbox"
+        name="Pending Requests"
+        parent="fap_menu_root"
+        action="fap_pending_inbox_action"
+        sequence="45"/>
+
+</odoo>

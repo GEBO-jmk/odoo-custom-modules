@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fap_location_user,fap.location user,model_fap_location,base.group_user,1,1,1,1
+access_fap_location_portal,fap.location portal,model_fap_location,base.group_portal,1,0,0,0
+access_fap_asset_user,fap.asset user,model_fap_asset,base.group_user,1,1,1,1
+access_fap_asset_portal,fap.asset portal,model_fap_asset,base.group_portal,1,0,0,0
+access_fap_equipment_user,fap.equipment user,model_fap_equipment,base.group_user,1,1,1,1
+access_fap_equipment_portal,fap.equipment portal,model_fap_equipment,base.group_portal,1,0,0,0
+access_fap_service_action_user,fap.service.action user,model_fap_service_action,base.group_user,1,1,1,1
+access_fap_service_action_portal,fap.service.action portal,model_fap_service_action,base.group_portal,1,0,0,0

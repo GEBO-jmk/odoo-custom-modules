@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="fap_location_rule_portal" model="ir.rule">
+        <field name="name">FAP Location: Portal Access</field>
+        <field name="model_id" ref="model_fap_location"/>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="domain_force">[
+            '|', '|',
+            ('owner_id', 'child_of', user.commercial_partner_id.id),
+            ('asset_ids.end_user_id', 'child_of', user.commercial_partner_id.id),
+            ('asset_ids.service_company_id', 'child_of', user.commercial_partner_id.id)
+        ]</field>
+    </record>
+
+    <record id="fap_asset_rule_portal" model="ir.rule">
+        <field name="name">FAP Asset: Portal Access</field>
+        <field name="model_id" ref="model_fap_asset"/>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="domain_force">[
+            '|',
+            ('end_user_id', 'child_of', user.commercial_partner_id.id),
+            ('service_company_id', 'child_of', user.commercial_partner_id.id)
+        ]</field>
+    </record>
+
+    <record id="fap_equipment_rule_portal" model="ir.rule">
+        <field name="name">FAP Equipment: Portal Access</field>
+        <field name="model_id" ref="model_fap_equipment"/>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="domain_force">[
+            '|',
+            ('asset_id.end_user_id', 'child_of', user.commercial_partner_id.id),
+            ('asset_id.service_company_id', 'child_of', user.commercial_partner_id.id)
+        ]</field>
+    </record>
+
+    <record id="fap_service_action_rule_portal" model="ir.rule">
+        <field name="name">FAP Service Action: Portal Access</field>
+        <field name="model_id" ref="model_fap_service_action"/>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="domain_force">[
+            '|',
+            ('asset_id.end_user_id', 'child_of', user.commercial_partner_id.id),
+            ('asset_id.service_company_id', 'child_of', user.commercial_partner_id.id)
+        ]</field>
+    </record>
+
+</odoo>

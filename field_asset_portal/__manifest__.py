@@ -1,0 +1,22 @@
+{
+    'name': 'Field Asset Portal',
+    'version': '19.0.1.0.0',
+    'category': 'Field Services',
+    'summary': 'Manage locations, assets, equipment and service actions with client portal access',
+    'depends': ['base', 'mail', 'portal'],
+    'data': [
+        'data/sequences.xml',
+        'data/mail_templates.xml',
+        'views/fap_location_views.xml',
+        'views/fap_asset_views.xml',
+        'views/fap_equipment_views.xml',
+        'views/fap_service_action_views.xml',
+        'views/fap_pending_inbox_views.xml',
+        'views/portal_templates.xml',
+        'security/ir.model.access.csv',
+        'security/record_rules.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'license': 'LGPL-3',
+}

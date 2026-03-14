@@ -1,0 +1,649 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* field_asset_portal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260305\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-14 12:35+0000\n"
+"PO-Revision-Date: 2026-03-14 12:35+0000\n"
+"Last-Translator: \n"
+"Language-Team: Swedish\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: field_asset_portal
+msgid "Action Needed"
+msgstr "Åtgärd krävs"
+
+#. module: field_asset_portal
+msgid "Active"
+msgstr "Aktiv"
+
+#. module: field_asset_portal
+msgid "Activities"
+msgstr "Aktiviteter"
+
+#. module: field_asset_portal
+msgid "Activity Exception Decoration"
+msgstr "Aktivitetsundantagsdekoration"
+
+#. module: field_asset_portal
+msgid "Activity State"
+msgstr "Aktivitetstillstånd"
+
+#. module: field_asset_portal
+msgid "Activity Type Icon"
+msgstr "Aktivitetstypikon"
+
+#. module: field_asset_portal
+msgid "Address"
+msgstr "Adress"
+
+#. module: field_asset_portal
+msgid "Approve"
+msgstr "Godkänn"
+
+#. module: field_asset_portal
+msgid "Approved"
+msgstr "Godkänd"
+
+#. module: field_asset_portal
+msgid "Asset"
+msgstr "Objekt"
+
+#. module: field_asset_portal
+msgid "Asset Name"
+msgstr "Objektnamn"
+
+#. module: field_asset_portal
+msgid "Asset:"
+msgstr "Objekt:"
+
+#. module: field_asset_portal
+msgid "Assets"
+msgstr "Objekt"
+
+#. module: field_asset_portal
+msgid "Assigned To"
+msgstr "Tilldelad till"
+
+#. module: field_asset_portal
+msgid "Attachment Count"
+msgstr "Antal bilagor"
+
+#. module: field_asset_portal
+msgid "Brief description of the issue or request"
+msgstr "Kort beskrivning av problemet eller begäran"
+
+#. module: field_asset_portal
+msgid "Calibration"
+msgstr "Kalibrering"
+
+#. module: field_asset_portal
+msgid "Cancel"
+msgstr "Avbryt"
+
+#. module: field_asset_portal
+msgid "Cancelled"
+msgstr "Avbruten"
+
+#. module: field_asset_portal
+msgid "City"
+msgstr "Stad"
+
+#. module: field_asset_portal
+msgid "Completed On"
+msgstr "Slutförd"
+
+#. module: field_asset_portal
+msgid "Confirm"
+msgstr "Bekräfta"
+
+#. module: field_asset_portal
+msgid "Confirmed"
+msgstr "Bekräftad"
+
+#. module: field_asset_portal
+msgid "Contractor"
+msgstr "Entreprenör"
+
+#. module: field_asset_portal
+msgid "Corrective"
+msgstr "Korrigerande"
+
+#. module: field_asset_portal
+msgid "Country"
+msgstr "Land"
+
+#. module: field_asset_portal
+msgid "Created by"
+msgstr "Skapad av"
+
+#. module: field_asset_portal
+msgid "Created on"
+msgstr "Skapad"
+
+#. module: field_asset_portal
+msgid "Critical"
+msgstr "Kritisk"
+
+#. module: field_asset_portal
+msgid "Date Requested"
+msgstr "Begärandatum"
+
+#. module: field_asset_portal
+msgid "Decline"
+msgstr "Neka"
+
+#. module: field_asset_portal
+msgid "Declined"
+msgstr "Nekad"
+
+#. module: field_asset_portal
+msgid "Description"
+msgstr "Beskrivning"
+
+#. module: field_asset_portal
+msgid "Details"
+msgstr "Detaljer"
+
+#. module: field_asset_portal
+msgid "Display Name"
+msgstr "Visningsnamn"
+
+#. module: field_asset_portal
+msgid "Done"
+msgstr "Klar"
+
+#. module: field_asset_portal
+msgid "Draft"
+msgstr "Utkast"
+
+#. module: field_asset_portal
+msgid "End"
+msgstr "Slutar"
+
+#. module: field_asset_portal
+msgid "End User"
+msgstr "Slutanvändare"
+
+#. module: field_asset_portal
+msgid "Equipment"
+msgstr "Utrustning"
+
+#. module: field_asset_portal
+msgid "Equipment Name"
+msgstr "Utrustningsnamn"
+
+#. module: field_asset_portal
+msgid "Expired"
+msgstr "Utgången"
+
+#. module: field_asset_portal
+msgid "Expiring Soon"
+msgstr "Löper ut snart"
+
+#. module: field_asset_portal
+msgid "Field Asset Portal"
+msgstr "Fältobjektportal"
+
+#. module: field_asset_portal
+msgid "Followers"
+msgstr "Följare"
+
+#. module: field_asset_portal
+msgid "Followers (Partners)"
+msgstr "Följare (partner)"
+
+#. module: field_asset_portal
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font Awesome-ikon t.ex. fa-tasks"
+
+#. module: field_asset_portal
+msgid "General"
+msgstr "Allmänt"
+
+#. module: field_asset_portal
+msgid "Has Message"
+msgstr "Har meddelande"
+
+#. module: field_asset_portal
+msgid "ID"
+msgstr "ID"
+
+#. module: field_asset_portal
+msgid "Icon"
+msgstr "Ikon"
+
+#. module: field_asset_portal
+msgid "Icon to indicate an exception activity."
+msgstr "Ikon för att indikera en undantagsaktivitet."
+
+#. module: field_asset_portal
+msgid "Identification"
+msgstr "Identifiering"
+
+#. module: field_asset_portal
+msgid "If checked, new messages require your attention."
+msgstr "Om markerad kräver nya meddelanden din uppmärksamhet."
+
+#. module: field_asset_portal
+msgid "If checked, some messages have a delivery error."
+msgstr "Om markerad har vissa meddelanden ett leveransfel."
+
+#. module: field_asset_portal
+msgid "In Progress"
+msgstr "Pågående"
+
+#. module: field_asset_portal
+msgid "Inspection"
+msgstr "Inspektion"
+
+#. module: field_asset_portal
+msgid "Installation"
+msgstr "Installation"
+
+#. module: field_asset_portal
+msgid "Internal Reference"
+msgstr "Intern referens"
+
+#. module: field_asset_portal
+msgid "Is Follower"
+msgstr "Är följare"
+
+#. module: field_asset_portal
+msgid "Last Updated by"
+msgstr "Senast uppdaterad av"
+
+#. module: field_asset_portal
+msgid "Last Updated on"
+msgstr "Senast uppdaterad"
+
+#. module: field_asset_portal
+msgid "Location"
+msgstr "Plats"
+
+#. module: field_asset_portal
+msgid "Location Name"
+msgstr "Platsnamn"
+
+#. module: field_asset_portal
+msgid "Locations"
+msgstr "Platser"
+
+#. module: field_asset_portal
+msgid "Manufacturer"
+msgstr "Tillverkare"
+
+#. module: field_asset_portal
+msgid "Manufacturer Part Code"
+msgstr "Tillverkarens artikelnummer"
+
+#. module: field_asset_portal
+msgid "Manufacturer Serial"
+msgstr "Tillverkarens serienummer"
+
+#. module: field_asset_portal
+msgid "Manufacturer Serial Number"
+msgstr "Tillverkarens serienummer"
+
+#. module: field_asset_portal
+msgid "Manufacturer Warranty"
+msgstr "Tillverkargaranti"
+
+#. module: field_asset_portal
+msgid "Manufacturer Warranty (months)"
+msgstr "Tillverkargaranti (månader)"
+
+#. module: field_asset_portal
+msgid "Manufacturer Warranty End"
+msgstr "Tillverkargaranti slutar"
+
+#. module: field_asset_portal
+msgid "Manufacturer Warranty Start"
+msgstr "Tillverkargaranti börjar"
+
+#. module: field_asset_portal
+msgid "Manufacturer Warranty Status"
+msgstr "Status tillverkargaranti"
+
+#. module: field_asset_portal
+msgid "Mark Done"
+msgstr "Markera som klar"
+
+#. module: field_asset_portal
+msgid "Message Delivery error"
+msgstr "Meddelandeleveransfel"
+
+#. module: field_asset_portal
+msgid "Messages"
+msgstr "Meddelanden"
+
+#. module: field_asset_portal
+msgid "Mfr Warranty"
+msgstr "Tillverkargaranti"
+
+#. module: field_asset_portal
+msgid "My Activity Deadline"
+msgstr "Min aktivitetsdeadline"
+
+#. module: field_asset_portal
+msgid "My Assets"
+msgstr "Mina objekt"
+
+#. module: field_asset_portal
+msgid "Name"
+msgstr "Namn"
+
+#. module: field_asset_portal
+msgid "New Service Request"
+msgstr "Ny servicebegäran"
+
+#. module: field_asset_portal
+msgid "Next Activity Deadline"
+msgstr "Nästa aktivitetsdeadline"
+
+#. module: field_asset_portal
+msgid "Next Activity Summary"
+msgstr "Nästa aktivitetssammanfattning"
+
+#. module: field_asset_portal
+msgid "Next Activity Type"
+msgstr "Nästa aktivitetstyp"
+
+#. module: field_asset_portal
+msgid "No assets found."
+msgstr "Inga objekt hittades."
+
+#. module: field_asset_portal
+msgid "No equipment recorded for this asset."
+msgstr "Ingen utrustning registrerad för detta objekt."
+
+#. module: field_asset_portal
+msgid "No service actions recorded for this asset."
+msgstr "Inga serviceåtgärder registrerade för detta objekt."
+
+#. module: field_asset_portal
+msgid "Normal"
+msgstr "Normal"
+
+#. module: field_asset_portal
+msgid "Not Set"
+msgstr "Ej angiven"
+
+#. module: field_asset_portal
+msgid "Notes"
+msgstr "Anteckningar"
+
+#. module: field_asset_portal
+msgid "Number of Actions"
+msgstr "Antal åtgärder"
+
+#. module: field_asset_portal
+msgid "Number of errors"
+msgstr "Antal fel"
+
+#. module: field_asset_portal
+msgid "Number of messages requiring action"
+msgstr "Antal meddelanden som kräver åtgärd"
+
+#. module: field_asset_portal
+msgid "Number of messages with delivery error"
+msgstr "Antal meddelanden med leveransfel"
+
+#. module: field_asset_portal
+msgid "Our Part Code"
+msgstr "Vårt artikelnummer"
+
+#. module: field_asset_portal
+msgid "Our References"
+msgstr "Våra referenser"
+
+#. module: field_asset_portal
+msgid "Our Serial Number"
+msgstr "Vårt serienummer"
+
+#. module: field_asset_portal
+msgid "Our Warranty"
+msgstr "Vår garanti"
+
+#. module: field_asset_portal
+msgid "Our Warranty (months)"
+msgstr "Vår garanti (månader)"
+
+#. module: field_asset_portal
+msgid "Our Warranty Active"
+msgstr "Vår garanti aktiv"
+
+#. module: field_asset_portal
+msgid "Our Warranty End"
+msgstr "Vår garanti slutar"
+
+#. module: field_asset_portal
+msgid "Our Warranty Expired"
+msgstr "Vår garanti utgången"
+
+#. module: field_asset_portal
+msgid "Our Warranty Expiring"
+msgstr "Vår garanti löper ut snart"
+
+#. module: field_asset_portal
+msgid "Our Warranty Start"
+msgstr "Vår garanti börjar"
+
+#. module: field_asset_portal
+msgid "Our Warranty Status"
+msgstr "Status vår garanti"
+
+#. module: field_asset_portal
+msgid "Owner"
+msgstr "Ägare"
+
+#. module: field_asset_portal
+msgid "Parts Replacement"
+msgstr "Delsbyte"
+
+#. module: field_asset_portal
+msgid "Pending"
+msgstr "Väntar"
+
+#. module: field_asset_portal
+msgid "Pending Requests"
+msgstr "Väntande begäranden"
+
+#. module: field_asset_portal
+msgid "Please describe the issue in detail..."
+msgstr "Beskriv problemet i detalj..."
+
+#. module: field_asset_portal
+msgid "Predictive"
+msgstr "Prediktiv"
+
+#. module: field_asset_portal
+msgid "Preventive"
+msgstr "Förebyggande"
+
+#. module: field_asset_portal
+msgid "Priority"
+msgstr "Prioritet"
+
+#. module: field_asset_portal
+msgid "Ref"
+msgstr "Ref"
+
+#. module: field_asset_portal
+msgid "Reference"
+msgstr "Referens"
+
+#. module: field_asset_portal
+msgid "Regarding your service request {{ object.ref }}"
+msgstr "Angående din servicebegäran {{ object.ref }}"
+
+#. module: field_asset_portal
+msgid "Request Service"
+msgstr "Begär service"
+
+#. module: field_asset_portal
+msgid "Requested By"
+msgstr "Begärd av"
+
+#. module: field_asset_portal
+msgid "Requested On"
+msgstr "Begärd"
+
+#. module: field_asset_portal
+msgid "Reset to Draft"
+msgstr "Återställ till utkast"
+
+#. module: field_asset_portal
+msgid "Resolution"
+msgstr "Lösning"
+
+#. module: field_asset_portal
+msgid "Resolution Notes"
+msgstr "Lösningsbeskrivning"
+
+#. module: field_asset_portal
+msgid "Responsible User"
+msgstr "Ansvarig användare"
+
+#. module: field_asset_portal
+msgid "SMS Delivery error"
+msgstr "SMS-leveransfel"
+
+#. module: field_asset_portal
+msgid "Scheduled Date"
+msgstr "Schemalagt datum"
+
+#. module: field_asset_portal
+msgid "Send for Review"
+msgstr "Skicka för granskning"
+
+#. module: field_asset_portal
+msgid "Service Action"
+msgstr "Serviceåtgärd"
+
+#. module: field_asset_portal
+msgid "Service Actions"
+msgstr "Serviceåtgärder"
+
+#. module: field_asset_portal
+msgid "Service Company"
+msgstr "Serviceföretag"
+
+#. module: field_asset_portal
+msgid "Service History"
+msgstr "Servicehistorik"
+
+#. module: field_asset_portal
+msgid "Service Request Approved"
+msgstr "Servicebegäran godkänd"
+
+#. module: field_asset_portal
+msgid "Service Request Declined"
+msgstr "Servicebegäran nekad"
+
+#. module: field_asset_portal
+msgid "Site Owner"
+msgstr "Platsägare"
+
+#. module: field_asset_portal
+msgid "Start"
+msgstr "Starta"
+
+#. module: field_asset_portal
+msgid "State"
+msgstr "Tillstånd"
+
+#. module: field_asset_portal
+msgid "Status"
+msgstr "Status"
+
+#. module: field_asset_portal
+msgid "Street"
+msgstr "Gatuadress"
+
+#. module: field_asset_portal
+msgid "Street 2"
+msgstr "Gatuadress 2"
+
+#. module: field_asset_portal
+msgid "Street2"
+msgstr "Gatuadress 2"
+
+#. module: field_asset_portal
+msgid "Submit Request"
+msgstr "Skicka begäran"
+
+#. module: field_asset_portal
+msgid "Summary"
+msgstr "Sammanfattning"
+
+#. module: field_asset_portal
+msgid "Type"
+msgstr "Typ"
+
+#. module: field_asset_portal
+msgid "Type of the exception activity on record."
+msgstr "Typ av undantagsaktivitet på posten."
+
+#. module: field_asset_portal
+msgid "Urgent"
+msgstr "Brådskande"
+
+#. module: field_asset_portal
+msgid "View your assets, warranties and service history"
+msgstr "Visa dina objekt, garantier och servicehistorik"
+
+#. module: field_asset_portal
+msgid "Warranty"
+msgstr "Garanti"
+
+#. module: field_asset_portal
+msgid "Warranty Duration (months)"
+msgstr "Garantilängd (månader)"
+
+#. module: field_asset_portal
+msgid "Warranty End"
+msgstr "Garanti slutar"
+
+#. module: field_asset_portal
+msgid "Warranty Start"
+msgstr "Garanti börjar"
+
+#. module: field_asset_portal
+msgid "Warranty Status"
+msgstr "Garantistatus"
+
+#. module: field_asset_portal
+msgid "Website Messages"
+msgstr "Webbplatsmeddelanden"
+
+#. module: field_asset_portal
+msgid "Website communication history"
+msgstr "Webbplatskommunikationshistorik"
+
+#. module: field_asset_portal
+msgid "Your Assets"
+msgstr "Dina objekt"
+
+#. module: field_asset_portal
+msgid "Your service request {{ object.ref }} has been approved"
+msgstr "Din servicebegäran {{ object.ref }} har godkänts"
+
+#. module: field_asset_portal
+msgid "ZIP"
+msgstr "Postnummer"
+
+#. module: field_asset_portal
+msgid "Zip"
+msgstr "Postnummer"
+
+#. module: field_asset_portal
+msgid "breadcrumb"
+msgstr "brödsmula"

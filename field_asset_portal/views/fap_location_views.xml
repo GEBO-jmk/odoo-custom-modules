@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="fap_location_view_form" model="ir.ui.view">
+        <field name="name">fap.location.view.form</field>
+        <field name="model">fap.location</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" icon="fa-building-o"
+                            type="action"
+                            name="%(field_asset_portal.fap_asset_action)d"
+                            context="{'default_location_id': id, 'search_default_location_id': id}">
+                            <field name="asset_count" widget="statinfo" string="Assets"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="Location Name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="ref"/>
+                            <field name="owner_id"/>
+                        </group>
+                    </group>
+                    <group string="Address">
+                        <group>
+                            <field name="street" placeholder="Street"/>
+                            <field name="street2" placeholder="Street 2"/>
+                            <field name="city" placeholder="City"/>
+                            <field name="zip" placeholder="ZIP"/>
+                        </group>
+                        <group>
+                            <field name="country_id" placeholder="Country"/>
+                            <field name="state_id" placeholder="State"/>
+                        </group>
+                    </group>
+                    <group string="Notes">
+                        <field name="notes" nolabel="1"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="fap_location_view_list" model="ir.ui.view">
+        <field name="name">fap.location.view.list</field>
+        <field name="model">fap.location</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="city"/>
+                <field name="country_id"/>
+                <field name="owner_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="fap_location_view_search" model="ir.ui.view">
+        <field name="name">fap.location.view.search</field>
+        <field name="model">fap.location</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="owner_id"/>
+                <separator/>
+                <filter name="group_by_owner" string="Owner" context="{'group_by': 'owner_id'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="fap_location_action" model="ir.actions.act_window">
+        <field name="name">Locations</field>
+        <field name="res_model">fap.location</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="fap_menu_root"
+        name="Field Asset Portal"
+        sequence="50"/>
+
+    <menuitem id="fap_menu_locations"
+        name="Locations"
+        parent="fap_menu_root"
+        action="fap_location_action"
+        sequence="10"/>
+
+</odoo>
