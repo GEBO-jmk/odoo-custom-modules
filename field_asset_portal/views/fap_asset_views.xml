@@ -10,13 +10,13 @@
                     <div class="oe_button_box" name="button_box">
                         <button class="oe_stat_button" icon="fa-cogs"
                             type="action"
-                            name="%(field_asset_portal.fap_equipment_action)d"
+                            name="field_asset_portal.fap_equipment_action"
                             context="{'default_asset_id': id, 'search_default_asset_id': id}">
                             <field name="equipment_count" widget="statinfo" string="Equipment"/>
                         </button>
                         <button class="oe_stat_button" icon="fa-wrench"
                             type="action"
-                            name="%(field_asset_portal.fap_service_action_action)d"
+                            name="field_asset_portal.fap_service_action_action"
                             context="{'default_asset_id': id, 'search_default_asset_id': id}">
                             <field name="service_action_count" widget="statinfo" string="Service Actions"/>
                         </button>

@@ -10,7 +10,7 @@
                     <div class="oe_button_box" name="button_box">
                         <button class="oe_stat_button" icon="fa-building-o"
                             type="action"
-                            name="%(field_asset_portal.fap_asset_action)d"
+                            name="field_asset_portal.fap_asset_action"
                             context="{'default_location_id': id, 'search_default_location_id': id}">
                             <field name="asset_count" widget="statinfo" string="Assets"/>
                         </button>
