@@ -10,12 +10,12 @@
                     <div class="oe_button_box" name="button_box">
                         <button class="oe_stat_button" icon="fa-cogs" type="object"
                                 name="action_open_equipment"
-                                context="{'default_asset_id': active_id}">
+                                context="{'default_asset_id': id}">
                             <field name="equipment_count" widget="statinfo" string="Equipment"/>
                         </button>
                         <button class="oe_stat_button" icon="fa-wrench" type="object"
                                 name="action_open_service_actions"
-                                context="{'default_asset_id': active_id}">
+                                context="{'default_asset_id': id}">
                             <field name="service_action_count" widget="statinfo" string="Service Actions"/>
                         </button>
                     </div>
