@@ -8,10 +8,9 @@
             <form>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
-                        <button class="oe_stat_button" icon="fa-wrench"
-                            type="action"
-                            name="field_asset_portal.fap_service_action_action"
-                            context="{'default_equipment_id': id, 'search_default_equipment_id': id}">
+                        <button class="oe_stat_button" icon="fa-wrench" type="object"
+                                name="action_open_service_actions"
+                                context="{'default_equipment_id': active_id}">
                             <field name="service_action_count" widget="statinfo" string="Service Actions"/>
                         </button>
                     </div>

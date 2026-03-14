@@ -70,6 +70,16 @@ class FapEquipment(models.Model):
         for rec in self:
             rec.service_action_count = self.env['fap.service.action'].search_count([('equipment_id', '=', rec.id)])
 
+    def action_open_service_actions(self):
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Service Actions',
+            'res_model': 'fap.service.action',
+            'view_mode': 'list,form',
+            'domain': [('equipment_id', '=', self.id)],
+            'context': {'default_equipment_id': self.id},
+        }
+
     @api.depends('manufacturer_warranty_start', 'manufacturer_warranty_duration')
     def _compute_manufacturer_warranty_end(self):
         for rec in self:

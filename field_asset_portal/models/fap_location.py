@@ -23,3 +23,13 @@ class FapLocation(models.Model):
     def _compute_asset_count(self):
         for rec in self:
             rec.asset_count = self.env['fap.asset'].search_count([('location_id', '=', rec.id)])
+
+    def action_open_assets(self):
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Assets',
+            'res_model': 'fap.asset',
+            'view_mode': 'list,form',
+            'domain': [('location_id', '=', self.id)],
+            'context': {'default_location_id': self.id},
+        }
