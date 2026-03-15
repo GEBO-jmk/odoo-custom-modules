@@ -22,7 +22,7 @@ class FapLocation(models.Model):
     )
     notes = fields.Html(string='Notes')
     active = fields.Boolean(default=True)
-    asset_ids = fields.One2many('fap.asset', 'location_id', string='Assets')
+    asset_ids = fields.One2many('fap.asset', 'location_id', string='Asset List')
     asset_count = fields.Integer(compute='_compute_asset_count', string='Assets')
 
     def _compute_asset_count(self):

@@ -38,8 +38,24 @@
                         </group>
                     </group>
                     <group string="Notes">
-                        <field name="notes" nolabel="1"/>
+                        <field name="notes" widget="html" nolabel="1"/>
                     </group>
+                    <notebook>
+                        <page string="Assets" name="assets">
+                            <field name="asset_ids" widget="one2many_list" nolabel="1">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="contractor_id"/>
+                                    <field name="service_company_id"/>
+                                    <field name="warranty_status" widget="badge"
+                                           decoration-success="warranty_status == 'active'"
+                                           decoration-warning="warranty_status == 'expiring_soon'"
+                                           decoration-danger="warranty_status == 'expired'"/>
+                                    <field name="warranty_end"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
                 </sheet>
                 <chatter/>
             </form>
