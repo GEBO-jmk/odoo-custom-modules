@@ -53,6 +53,27 @@
                         <label for="notes" string="Notes"/>
                         <field name="notes" nolabel="1"/>
                     </div>
+                    <notebook>
+                        <page string="Equipment" name="equipment">
+                            <field name="equipment_ids" widget="one2many_list" nolabel="1">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="manufacturer_id"/>
+                                    <field name="manufacturer_serial"/>
+                                    <field name="your_part_code"/>
+                                    <field name="service_company_id"/>
+                                    <field name="manufacturer_warranty_status" widget="badge"
+                                           decoration-success="manufacturer_warranty_status == 'active'"
+                                           decoration-warning="manufacturer_warranty_status == 'expiring_soon'"
+                                           decoration-danger="manufacturer_warranty_status == 'expired'"/>
+                                    <field name="our_warranty_status" widget="badge"
+                                           decoration-success="our_warranty_status == 'active'"
+                                           decoration-warning="our_warranty_status == 'expiring_soon'"
+                                           decoration-danger="our_warranty_status == 'expired'"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
                 </sheet>
                 <chatter/>
             </form>

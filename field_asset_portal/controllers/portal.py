@@ -42,6 +42,7 @@ class FieldAssetPortal(CustomerPortal):
         if not asset_ids:
             return request.redirect('/my/assets')
         asset = request.env['fap.asset'].sudo().browse(asset_ids[0])
+        asset.sudo()._portal_ensure_token()
         equipment_ids = request.env['fap.equipment'].search([('asset_id', '=', asset_id)]).ids
         equipment = request.env['fap.equipment'].sudo().browse(equipment_ids)
         service_action_ids = request.env['fap.service.action'].search(
@@ -52,7 +53,7 @@ class FieldAssetPortal(CustomerPortal):
             'asset': asset,
             'equipment': equipment,
             'service_actions': service_actions,
-            'page_name': 'assets',
+            'page_name': 'asset_detail',
         })
 
     @http.route('/my/assets/<int:asset_id>/service/new', type='http', auth='user', website=True)
@@ -68,7 +69,7 @@ class FieldAssetPortal(CustomerPortal):
             'asset': asset,
             'assets': request.env['fap.asset'].sudo().browse([asset_id]),
             'equipment': equipment,
-            'page_name': 'assets',
+            'page_name': 'service_request',
             'action_types': request.env['fap.service.action']._fields['action_type'].selection,
         })
 
@@ -84,8 +85,25 @@ class FieldAssetPortal(CustomerPortal):
             'location': location,
             'assets': assets,
             'equipment': request.env['fap.equipment'].sudo().browse([]),
-            'page_name': 'assets',
+            'page_name': 'service_request',
             'action_types': request.env['fap.service.action']._fields['action_type'].selection,
+        })
+
+    @http.route('/my/equipment/<int:equipment_id>', type='http', auth='user', website=True)
+    def portal_equipment_detail(self, equipment_id, **kwargs):
+        equipment_ids = request.env['fap.equipment'].search([('id', '=', equipment_id)]).ids
+        if not equipment_ids:
+            return request.redirect('/my/assets')
+        equipment = request.env['fap.equipment'].sudo().browse(equipment_ids[0])
+        equipment.sudo()._portal_ensure_token()
+        service_action_ids = request.env['fap.service.action'].search(
+            [('equipment_id', '=', equipment_id)], order='date_requested desc'
+        ).ids
+        service_actions = request.env['fap.service.action'].sudo().browse(service_action_ids)
+        return request.render('field_asset_portal.portal_equipment_detail', {
+            'equipment': equipment,
+            'service_actions': service_actions,
+            'page_name': 'equipment_detail',
         })
 
     @http.route('/my/equipment/<int:equipment_id>/service/new', type='http', auth='user', website=True)
@@ -103,7 +121,7 @@ class FieldAssetPortal(CustomerPortal):
             'assets': request.env['fap.asset'].sudo().browse([asset.id]),
             'equipment': all_equipment,
             'preselected_equipment_id': equipment_id,
-            'page_name': 'assets',
+            'page_name': 'service_request',
             'action_types': request.env['fap.service.action']._fields['action_type'].selection,
         })
 

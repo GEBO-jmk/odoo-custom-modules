@@ -6,7 +6,7 @@ from odoo import api, fields, models
 class FapAsset(models.Model):
     _name = 'fap.asset'
     _description = 'Asset'
-    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _inherit = ['mail.thread', 'mail.activity.mixin', 'portal.mixin']
 
     name = fields.Char(string='Asset Name', required=True, tracking=True)
     ref = fields.Char(string='Internal Reference')

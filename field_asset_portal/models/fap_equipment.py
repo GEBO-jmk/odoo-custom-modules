@@ -6,7 +6,7 @@ from odoo import api, fields, models
 class FapEquipment(models.Model):
     _name = 'fap.equipment'
     _description = 'Equipment'
-    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _inherit = ['mail.thread', 'mail.activity.mixin', 'portal.mixin']
 
     name = fields.Char(string='Equipment Name', required=True, tracking=True)
     asset_id = fields.Many2one(
