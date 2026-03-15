@@ -49,9 +49,10 @@
                             </group>
                         </page>
                     </notebook>
-                    <group string="Notes">
-                        <field name="notes" widget="html" nolabel="1"/>
-                    </group>
+                    <div class="o_field_html mt-3">
+                        <label for="notes" string="Notes"/>
+                        <field name="notes" nolabel="1"/>
+                    </div>
                 </sheet>
                 <chatter/>
             </form>
