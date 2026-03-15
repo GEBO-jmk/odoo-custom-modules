@@ -100,12 +100,12 @@
                             <dl class="row mb-0">
                                 <dt class="col-sm-5">Location</dt>
                                 <dd class="col-sm-7"><t t-out="asset.location_id.name or '&#8212;'"/></dd>
+                                <dt class="col-sm-5">Owner/Occupant</dt>
+                                <dd class="col-sm-7"><t t-out="asset.location_id.owner_id.name or '&#8212;'"/></dd>
                                 <dt class="col-sm-5">Contractor</dt>
                                 <dd class="col-sm-7"><t t-out="asset.contractor_id.name or '&#8212;'"/></dd>
                                 <dt class="col-sm-5">Service Company</dt>
                                 <dd class="col-sm-7"><t t-out="asset.service_company_id.name or '&#8212;'"/></dd>
-                                <dt class="col-sm-5">End User</dt>
-                                <dd class="col-sm-7"><t t-out="asset.end_user_id.name or '&#8212;'"/></dd>
                             </dl>
                         </div>
                     </div>

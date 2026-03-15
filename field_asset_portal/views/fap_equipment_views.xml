@@ -29,6 +29,7 @@
                             <group>
                                 <group string="Manufacturer">
                                     <field name="manufacturer_id"/>
+                                    <field name="service_company_id"/>
                                     <field name="manufacturer_part_code"/>
                                     <field name="manufacturer_serial"/>
                                 </group>
@@ -80,6 +81,7 @@
                 <field name="name"/>
                 <field name="asset_id"/>
                 <field name="manufacturer_id"/>
+                <field name="service_company_id" optional="show"/>
                 <field name="manufacturer_serial"/>
                 <field name="manufacturer_warranty_status" widget="badge"
                     decoration-success="manufacturer_warranty_status == 'active'"

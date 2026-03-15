@@ -34,7 +34,6 @@
                             <group>
                                 <field name="contractor_id"/>
                                 <field name="service_company_id"/>
-                                <field name="end_user_id"/>
                             </group>
                         </page>
                         <page string="Warranty">

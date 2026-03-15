@@ -17,6 +17,11 @@ class FapEquipment(models.Model):
         related='asset_id.location_id', store=True, readonly=True,
     )
     manufacturer_id = fields.Many2one('res.partner', string='Manufacturer')
+    service_company_id = fields.Many2one(
+        'res.partner',
+        string='Service Company',
+        help='Service company for this equipment. Overrides the asset-level service company if set.',
+    )
     manufacturer_part_code = fields.Char(string='Manufacturer Part Code')
     manufacturer_serial = fields.Char(string='Manufacturer Serial Number')
     your_part_code = fields.Char(string='Our Part Code')

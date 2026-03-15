@@ -14,7 +14,12 @@ class FapLocation(models.Model):
     zip = fields.Char()
     country_id = fields.Many2one('res.country')
     state_id = fields.Many2one('res.country.state')
-    owner_id = fields.Many2one('res.partner', string='Site Owner', required=True, tracking=True)
+    owner_id = fields.Many2one('res.partner', string='Owner/Occupant', required=True, tracking=True)
+    site_owner_id = fields.Many2one(
+        'res.partner',
+        string='Site Owner',
+        help='The legal owner of the building/property.',
+    )
     notes = fields.Html(string='Notes')
     active = fields.Boolean(default=True)
     asset_ids = fields.One2many('fap.asset', 'location_id', string='Assets')

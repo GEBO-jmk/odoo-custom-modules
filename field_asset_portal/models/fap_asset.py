@@ -15,7 +15,6 @@ class FapAsset(models.Model):
     )
     contractor_id = fields.Many2one('res.partner', string='Contractor')
     service_company_id = fields.Many2one('res.partner', string='Service Company')
-    end_user_id = fields.Many2one('res.partner', string='End User')
     warranty_start = fields.Date(string='Warranty Start')
     warranty_duration = fields.Integer(string='Warranty Duration (months)', default=12)
     warranty_end = fields.Date(
@@ -34,6 +33,7 @@ class FapAsset(models.Model):
     )
     notes = fields.Html(string='Notes')
     active = fields.Boolean(default=True)
+    equipment_ids = fields.One2many('fap.equipment', 'asset_id', string='Equipment')
     equipment_count = fields.Integer(compute='_compute_equipment_count', string='Equipment')
     service_action_count = fields.Integer(compute='_compute_service_action_count', string='Service Actions')
 

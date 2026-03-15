@@ -10,10 +10,11 @@ class FieldAssetPortal(CustomerPortal):
         if 'asset_count' in counters:
             partner = request.env.user.partner_id
             values['asset_count'] = request.env['fap.asset'].search_count([
-                '|', '|',
-                ('end_user_id', 'child_of', partner.commercial_partner_id.id),
-                ('service_company_id', 'child_of', partner.commercial_partner_id.id),
+                '|', '|', '|',
+                ('location_id.owner_id', 'child_of', partner.commercial_partner_id.id),
                 ('contractor_id', 'child_of', partner.commercial_partner_id.id),
+                ('service_company_id', 'child_of', partner.commercial_partner_id.id),
+                ('equipment_ids.service_company_id', 'child_of', partner.commercial_partner_id.id),
             ])
         return values
 
