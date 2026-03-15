@@ -8,7 +8,13 @@ class FieldAssetPortal(CustomerPortal):
     def _prepare_home_portal_values(self, counters):
         values = super()._prepare_home_portal_values(counters)
         if 'asset_count' in counters:
-            values['asset_count'] = request.env['fap.asset'].search_count([])
+            partner = request.env.user.partner_id
+            values['asset_count'] = request.env['fap.asset'].search_count([
+                '|', '|',
+                ('end_user_id', 'child_of', partner.commercial_partner_id.id),
+                ('service_company_id', 'child_of', partner.commercial_partner_id.id),
+                ('contractor_id', 'child_of', partner.commercial_partner_id.id),
+            ])
         return values
 
     @http.route('/my/assets', type='http', auth='user', website=True)

@@ -6,10 +6,11 @@
         <field name="model_id" ref="model_fap_location"/>
         <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
         <field name="domain_force">[
-            '|', '|',
+            '|', '|', '|',
             ('owner_id', 'child_of', user.commercial_partner_id.id),
             ('asset_ids.end_user_id', 'child_of', user.commercial_partner_id.id),
-            ('asset_ids.service_company_id', 'child_of', user.commercial_partner_id.id)
+            ('asset_ids.service_company_id', 'child_of', user.commercial_partner_id.id),
+            ('asset_ids.contractor_id', 'child_of', user.commercial_partner_id.id)
         ]</field>
     </record>
 
@@ -18,9 +19,10 @@
         <field name="model_id" ref="model_fap_asset"/>
         <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
         <field name="domain_force">[
-            '|',
+            '|', '|',
             ('end_user_id', 'child_of', user.commercial_partner_id.id),
-            ('service_company_id', 'child_of', user.commercial_partner_id.id)
+            ('service_company_id', 'child_of', user.commercial_partner_id.id),
+            ('contractor_id', 'child_of', user.commercial_partner_id.id)
         ]</field>
     </record>
 
@@ -29,9 +31,10 @@
         <field name="model_id" ref="model_fap_equipment"/>
         <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
         <field name="domain_force">[
-            '|',
+            '|', '|',
             ('asset_id.end_user_id', 'child_of', user.commercial_partner_id.id),
-            ('asset_id.service_company_id', 'child_of', user.commercial_partner_id.id)
+            ('asset_id.service_company_id', 'child_of', user.commercial_partner_id.id),
+            ('asset_id.contractor_id', 'child_of', user.commercial_partner_id.id)
         ]</field>
     </record>
 
@@ -40,9 +43,10 @@
         <field name="model_id" ref="model_fap_service_action"/>
         <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
         <field name="domain_force">[
-            '|',
+            '|', '|',
             ('asset_id.end_user_id', 'child_of', user.commercial_partner_id.id),
-            ('asset_id.service_company_id', 'child_of', user.commercial_partner_id.id)
+            ('asset_id.service_company_id', 'child_of', user.commercial_partner_id.id),
+            ('asset_id.contractor_id', 'child_of', user.commercial_partner_id.id)
         ]</field>
     </record>
 
